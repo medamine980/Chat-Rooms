@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import io from 'socket.io-client';
 import { setIpv4, setRoom } from "../../actions";
 import Room from "./Room/Room";
+import { WEB_SOCKET_END_POINT } from "../../constants/configuration";
 import "./AvailableRooms.css"
 
 let socket;
@@ -13,7 +14,7 @@ const AvailableRooms = () => {
     const [loading, setLoading] = useState(false);
     const dispatch = useDispatch();
     const history = useHistory();
-    const END_POINT = "http://localhost:5000";
+    const END_POINT = WEB_SOCKET_END_POINT;
     const IP_END_POINT = "https://api.ipify.org/";
     let abortController;
 
@@ -60,10 +61,10 @@ const AvailableRooms = () => {
     }, [abortController])
     return (
         <>
-            { loading ?
+            {loading ?
                 <div className="loadingInRoomPath">
                     Loading...
-        </div> :
+                </div> :
                 <div className="roomsDataContainer">
                     <header id="roomsDataContainerHeader">Rooms</header>
 

@@ -6,6 +6,7 @@ import io from 'socket.io-client';
 
 import "./Create.css";
 import { Link } from 'react-router-dom';
+import { WEB_SOCKET_END_POINT } from "../../constants/configuration";
 
 const maxLengthRoom = 30;
 let socket;
@@ -16,7 +17,7 @@ const Create = () => {
     const dispatch = useDispatch();
     const { username, room } = useSelector(state => state.joinData)
     const history = useHistory();
-    const END_POINT = "http://localhost:5000";
+    const END_POINT = WEB_SOCKET_END_POINT;
     const IP_END_POINT = "https://api.ipify.org/";
     let abortController;
     const handleSubmit = async (e) => {

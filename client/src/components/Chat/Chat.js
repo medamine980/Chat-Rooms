@@ -1,10 +1,10 @@
+import './Chat.css';
 import { useState, useEffect, createRef, useRef, useMemo } from 'react';
 import io from "socket.io-client";
 import { useDispatch, useSelector } from 'react-redux';
 import InfoBar from '../InfoBar/InfoBar';
 import { useHistory } from 'react-router-dom';
-
-import './Chat.css';
+import { WEB_SOCKET_END_POINT } from "../../constants/configuration";
 import Input from '../Input/UserForm';
 import Messages from '../Messages/Messages';
 import { removeFlashMessage, addFlashMessage, setRoom } from '../../actions';
@@ -21,7 +21,7 @@ const Chat = () => {
     const isHost = useRef();
     const history = useHistory();
     const dispatch = useDispatch();
-    const END_POINT = "http://localhost:5000";
+    const END_POINT = WEB_SOCKET_END_POINT;
     const readInputFileDocument = createRef();
     const events = useRef(() => { });
     const { messagesObjectStore } = useChatIDB();
