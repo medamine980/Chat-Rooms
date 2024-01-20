@@ -1,0 +1,14 @@
+:root{
+    --lt-myMessage-background: rgb(59, 143, 182);
+    --lt-message-background: rgb(238, 237, 237);
+    --lt-regularBlue-background: rgb(35, 92, 156);
+    --lt-smallBorder: .5px black solid;
+}
+
+:root{
+    --myMessage-background: var(--lt-myMessage-background);
+    --message-background: var(--lt-message-background);
+    --regularBlue-background: var(--lt-regularBlue-background);
+    --smallBorder: var(--lt-smallBorder);
+
+}

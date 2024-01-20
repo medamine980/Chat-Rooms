@@ -1,0 +1,65 @@
+.kickButton{
+    color: red;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banButton{
+    color: green;
+    cursor: pointer;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kickBanButtons{
+    display:flex;
+    width:100%;
+    gap:1rem;
+    padding: 1rem;
+}
+.userInfoContainer > div.username{
+    width:55%;
+    overflow-wrap: break-word;
+    text-align: start;
+    padding: .25rem .5rem;
+}
+.userInfoContainer{
+    display: flex;
+}
+.roleDisplay{
+    color:rgb(68, 59, 50);
+    padding-left: 2rem;
+}
+.banTimeAndReason{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: .35rem;
+}
+.banTimeAndReason label{
+    display: flex;
+    gap: .5rem;
+}
+.banTimeAndReason label input[type="number"]{
+    width: 90%;
+}
+.banCancelButtons{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.banCancelButtons button{
+    padding: .5rem;
+
+    background-color: var(--regularBlue-background);
+    border: var(--smallBorder);
+    cursor: pointer;
+    color:white;
+}
+
+hr{
+    box-shadow: 1px 1px 1px 1px black;
+}

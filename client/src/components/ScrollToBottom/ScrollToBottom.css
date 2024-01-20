@@ -1,0 +1,36 @@
+.scrollToBottomContainer{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+.scrollToBottomScroller{
+    overflow:auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding:1rem;
+}
+.scrollToBottomButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    margin-right: 1.1rem;
+    border-radius: 2rem;
+    border:none;
+    border-right: 1px black solid;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgb(107, 100, 100);
+    filter: grayscale(25%) opacity(.7);
+}
+.scrollToBottomButton:active{
+    border:none;
+}
+.scrollToBottomButton:hover{
+    filter: grayscale(100%) 
+}
+.scrollToBottomButton > img{
+    padding-top: .25rem;
+}

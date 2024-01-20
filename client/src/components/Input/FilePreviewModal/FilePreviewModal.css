@@ -1,0 +1,47 @@
+.previewImage{
+    --scale: 3;
+    --x: 0px;
+    --y: 0px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    cursor: zoom-in;
+}
+
+.modalContent :is(.document, .msaccess){
+    display: flex;
+    margin: auto;
+    margin: 4rem 20%;
+    gap: 2rem;
+}
+.modalContent :is(.document, .msaccess) img{
+    float: left;
+}
+.modalContent :is(.document, .msaccess) p{
+    float: left;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    color:blue;
+}
+.captionInputAndSendButton textarea.captionInput{
+    width: -webkit-fill-available;
+    width: stretch;
+    width: -moz-available;
+    margin-top:1rem;
+    padding:1rem;
+    resize: none;
+}
+
+#zoomChecked[type="checkbox"]{
+    display: none;
+}
+#zoomChecked[type="checkbox"]:checked ~ img.previewImage{
+    transform: translate(var(--x), var(--y)) scale(var(--scale));
+    cursor: zoom-out;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 7rem;
+}
+#zoomChecked[type="checkbox"]:checked ~.captionInputAndSendButton{
+    display: none;
+}

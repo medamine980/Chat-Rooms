@@ -1,0 +1,58 @@
+#roomsDataContainerHeader{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+#roomsDataContainerHeader:hover{
+    
+}
+
+.roomsDataContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 25%;
+    gap : 1rem;
+}
+
+.loadingInRoomPath{
+    position:absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.roomsDataContainer .createRoomLinkButton{
+    text-decoration: none;
+    background-color: rgb(35, 92, 156);
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    transition: 300ms;
+}
+.roomsDataContainer .createRoomLinkButton:link{
+    color:rgb(223, 219, 219);
+}
+.roomsDataContainer .createRoomLinkButton:visited:hover, .roomsDataContainer .createRoomLinkButton:link:hover{
+    color: whitesmoke;
+}
+.roomsDataContainer .createRoomLinkButton:visited{
+    color:rgb(223, 219, 219);
+}
+
+@media screen and (max-width: 1000px){
+    .roomsDataContainer{
+        margin: 1rem 17%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .roomsDataContainer{
+        margin: 1rem 10%;
+    }
+}
+@media screen and (max-width:650px) {
+    .roomsDataContainer{
+        margin:1rem 4%;
+    }
+}

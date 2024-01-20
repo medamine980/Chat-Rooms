@@ -1,0 +1,44 @@
+.roomDataContainer{
+    background-color: white;
+    padding:2rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.roomDataAndJoinButtonContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.roomDataHr{
+    background-color: rgba(0, 217, 255, 0.89);
+    box-shadow: 1px 0px 1px 1px rgba(8, 77, 122, 0.89);
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.roomDataContainer .joinRoomButton{
+    background-color: var(--regularBlue-background);
+    border: var(--smallBorder) black solid;
+    padding:.5rem;
+    border-radius: .25rem;
+    width: 25%;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.856);
+    overflow-wrap: break-word;
+}
+.joinRoomButton:hover{
+    background-color: rgb(72, 151, 216);
+}
+
+.roomDataContainer header{
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .roomDataContainer{
+        
+    }
+    .roomDataContainer .joinRoomButton{
+        padding: .2rem;
+    }
+}

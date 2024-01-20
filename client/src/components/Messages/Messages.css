@@ -1,0 +1,17 @@
+.messages-top-loading{
+    width: 16px;
+    border-radius: 55rem;
+    border-top: 2.5px solid rgba(0, 132, 255, 0.739);
+    align-self:center;
+    min-height: 16px;
+    animation: rotate .8s infinite linear;
+    margin: 1rem 0;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

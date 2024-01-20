@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap&family=Arimo&display=swap');
+
+:root{
+    font-family: "Rubik";
+    /* font-size: 16px; */
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    margin-left: 4rem;
+    font-size: 18px;
+    overflow:hidden;
+}
+html {
+    min-height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
+}
+::-webkit-scrollbar{
+    width: .6rem;
+    height: .6rem;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(33, 84, 133);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: rgb(223, 220, 220);
+    border: .1px rgba(0, 0, 255, 0.137) solid;
+}
+
+::placeholder{
+    font-family: "Varela Round";
+}
+
+textarea{
+    font-family: "Arimo";
+    font-weight: 600;
+}
+input{
+    font-family: "Rubik";
+}
+html{
+    margin:0;
+    /* background: linear-gradient(to bottom right, rgb(170, 170, 221), white); */
+    background-color: rgba(155, 170, 219, 0.493);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+@media only screen and (max-width: 650px){
+    body{
+        margin:0;
+    }
+}
+

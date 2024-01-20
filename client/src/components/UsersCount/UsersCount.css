@@ -1,0 +1,61 @@
+.usersCount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right:5% ;
+    cursor: pointer;
+}
+
+.innerUsersCount{
+    font-weight: 800;
+}
+
+.innerUsersCount#usersCountGreen{
+    animation: greenFlash 3s ease-in-out;
+}
+
+.innerUsersCount#usersCountRed{
+    animation: redFlash 3s ease-in-out;
+}
+
+@keyframes greenFlash {
+    0%{
+        color:green;
+    }
+    20%{
+        color: black;
+    }
+    40%{
+        color:green;
+    }
+    60%{
+        color: black;
+    }
+    80%{
+        color:green;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes redFlash {
+    0%{
+        color:red;
+    }
+    20%{
+        color: black;
+    }
+    40%{
+        color:red;
+    }
+    60%{
+        color:black;
+    }
+    80%{
+        color:red;
+    }
+    100%{
+        color: black;
+    }
+}

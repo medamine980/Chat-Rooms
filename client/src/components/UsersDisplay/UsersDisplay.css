@@ -1,0 +1,17 @@
+.usersTableToggler{
+    overflow-wrap: break-word;
+    min-width: auto;
+    width:auto;
+    max-width: 30%;
+    position:absolute;
+    top: 22.5%;
+    right: 48%;
+}
+
+.usersTable{
+    width: 100%;
+}
+.usersTable :is(th,tr,td){
+    width: 100%;
+    max-width: 1px;
+}

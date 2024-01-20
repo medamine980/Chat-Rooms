@@ -1,0 +1,73 @@
+#create-submit-btn {
+    border-radius: 1rem;
+    border: none;
+    cursor:pointer;
+    padding: .5rem;
+}
+
+.createInputContainer{
+    margin:10% 25%;
+    padding:3%;
+}
+.createInputContainer > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.createInputContainer > form > input{
+    padding: 1rem;
+}
+.createInputContainer > form > input:focus{
+    outline: none;
+}
+.createInputContainer .roomsLink{
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    cursor: pointer;
+    padding:.70rem;
+    border-radius: .5rem;
+    margin: 7rem 3rem 1rem 3rem;
+}
+.createInputContainer .roomsLink:visited{
+    background-color: rgb(35, 92, 156);
+    color:rgb(223, 219, 219);
+}
+.createInputContainer .roomsLink:link{
+    background-color: rgb(35, 92, 156);
+    color: rgb(223, 219, 219);
+}
+.createInputContainer .roomsLink:visited:hover, .createInputContainer .roomsLink:link:hover{
+    color:whitesmoke;
+}
+.createInputContainer .roomsLink{
+    background-color: rgb(35, 92, 156);
+    color:rgb(223, 219, 219);
+}
+header.create-header{
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+}
+
+hr{
+    margin:1rem;
+}
+
+@media screen and (max-width:1000px) {
+    .createInputContainer{
+        margin:17.25% 17%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .createInputContainer{
+        margin:22.5% 10%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .createInputContainer{
+        margin:35% 0;
+    }
+}

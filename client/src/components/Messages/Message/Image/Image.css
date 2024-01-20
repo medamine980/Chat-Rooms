@@ -1,0 +1,9 @@
+:is(.myMessage, .message) .imageSentByUser{
+    width: stretch;
+    max-width: 100%;
+    cursor: pointer;
+    border: .05rem grey solid;
+    position: relative;
+    margin-bottom: .1rem;
+    /* margin:1.35rem 0; */
+}

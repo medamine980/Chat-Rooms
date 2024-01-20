@@ -1,0 +1,39 @@
+.usernameInputOnModal{
+    width: -webkit-fill-available;
+    height: 1rem;
+    padding: 1.5rem;
+    border: 1px grey solid;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.usernameInputOnModalContainer{
+    display:flex;
+    flex-direction: column;
+    margin: 0 10%;
+    gap: .15rem;
+}
+.usernameInputOnModal,.saveUsernameOnModal{
+    border-radius: 5px;
+}
+.saveUsernameOnModal{
+    padding: .5rem 1rem;
+    margin-top:.10rem;
+    background-color: rgb(123, 173, 206);
+    border: 1px grey solid;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px 1px);
+    transition: background-color 500ms ease-in-out;
+    font-weight: bold;
+}
+.saveUsernameOnModal:hover{
+    background-color: rgb(25, 128, 168);
+}
+.saveUsernameOnModal:active{
+    box-shadow: .5px .5px 3px .7px black;   
+}
+.usernameInputInfoOnModal{
+    font-size: .75rem;
+    /* filter: grayscale(50%) opacity(.5); */
+    padding-left:.5rem;
+    color: red;
+}

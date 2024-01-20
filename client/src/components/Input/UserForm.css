@@ -1,0 +1,74 @@
+#chatInputForm{
+    width: 100%;
+    height: fit-content;
+    /* display: flex; */
+    background-color: white;
+    border: .1rem solid grey;
+    padding-left: .5rem;
+    position: relative;
+}
+#chatInputContainer{
+    display: flex;
+}
+#submitMessageButton{
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+#chatInputForm #messageInput{
+    width: 100%;
+    padding: .75rem;
+    max-height: 150px;
+    border: .5px grey solid;
+    border-right: none;
+    border-left: none;
+    resize: none;
+    background-color: rgb(124, 114, 114);
+    color: white;
+    height: 4rem;
+    margin: .5rem;
+    font-size: 1.01rem;
+    border-radius: 1.25rem;
+    letter-spacing: .12rem;
+}
+#messageInput::placeholder{
+    color:rgba(255, 255, 255, 0.705)
+}
+#chatInputForm #uploadDocumentSettingsButton{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    margin: 1.25rem 0;
+    border-radius: 55rem;
+    filter: grayscale(10%);
+    background-image: url("../../images/settings-dots-vertical.png");
+}
+#chatInputForm #uploadDocumentSettingsButton.selected{
+    background-color: rgba(0, 0, 0, 0.274);
+}
+#chatInputForm #emojiOption{
+    
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+    opacity: .8;
+    width: 50px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#chatInputForm #emojiOption.withEmojiImg{
+    background-image: url('../../images/Emoji.svg');
+}
+#chatInputForm #emojiOption.withCloseChar{
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+

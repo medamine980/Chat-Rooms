@@ -1,0 +1,108 @@
+:root{
+    --slideUp-height: -150rem;
+}
+
+.flashMessageContainer{
+    position: fixed;
+    top: 2rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    overflow-wrap: break-word;
+    TOP: 5rem;
+    width: 20rem;
+    right: 50%;
+    transform: translate(50%,50%);
+    border-radius: 1px;
+    background: white;
+    z-index: 100;
+    padding: 1.25rem 2rem;
+    padding-bottom: 1.5rem;
+    max-width: 90%;
+    animation: slideDown 1s;
+}
+.flashMessageContainer header .spanClose{
+    float: right;
+    cursor: pointer;
+    color:black;
+    transition: 400ms;
+}
+.flashMessageContainer header.flashMessageHeader{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.flashMessageContainer.closeFlashMessage{
+    animation: slideUp 2s;
+}
+.flashMessageContainer.flashMessageError header .spanClose:hover{
+    color:red;
+}
+.flashMessageContainer.flashMessageError{
+    border: red .15rem solid;
+}
+.flashMessageContainer.flashMessageSuccess{
+    border: green .15rem solid;
+}
+.flashMessageContainer.flashMessageSuccess header .spanClose:hover{
+    color:green;
+}
+.flashMessageContainer.flashMessageWarning{
+    border: rgb(248, 244, 0) .15rem solid;
+}
+.flashMessageContainer.flashMessageWarning header .spanClose:hover{
+    color:rgb(248, 244, 0);
+}
+.flashMessageCloseButton{
+    margin: 1.2rem auto 0 auto;
+    height: 2rem;
+    cursor: pointer;
+    transition: backgroundColor .5s;
+}
+.flashMessageContainer.flashMessageWarning .flashMessageCloseButton:hover{
+    background-color: rgb(248, 244, 0);
+    border: .1rem solid black;
+    border-radius: .1rem;
+    color: black;
+}
+.flashMessageContainer.flashMessageWarning .flashMessageCloseButton:active{
+    background-color: rgb(248, 244, 0);
+    border: .1rem solid black;
+    border-radius: .1rem;
+    color: rgb(46, 39, 39);
+}
+.flashMessageContainer.flashMessageError .flashMessageCloseButton:hover{
+    background-color: rgb(241, 0, 0);
+    border:none;
+    border: .1rem solid black;
+    border-radius:.1rem;
+    color:grey;
+}
+.flashMessageContainer.flashMessageError .flashMessageCloseButton:active{
+    background-color: rgb(204, 189, 189);
+    border: .1rem solid black;
+    border-radius: .1rem;
+    color:rgb(0, 0, 0);
+}
+.flashMessageContainer.flashMessageSuccess .flashMessageCloseButton:hover{
+    background-color: rgb(5, 143, 0);
+}
+
+@keyframes slideUp {
+    0%{
+        top: 5rem;
+    }
+    100%{
+        top: var(--slideUp-height);
+    }
+}
+@keyframes slideDown {
+    0%{
+        top: var(--slideUp-height);
+    }
+    100%{
+        top: 5rem;
+    }
+}
