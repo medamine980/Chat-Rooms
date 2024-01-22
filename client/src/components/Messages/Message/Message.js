@@ -152,7 +152,6 @@ const Message = React.memo(({ message: { user, text, fileType, blob, time, fileN
 
     useEffect(() => {
         return () => {
-            console.log("dead");
             url.current && URL.revokeObjectURL(url.current);
         }
     }, [url])
@@ -223,8 +222,13 @@ const Message = React.memo(({ message: { user, text, fileType, blob, time, fileN
                             download={download} />
                     }
                     {isDocument &&
-                        <Document _alt="ms-access file" url={url.current}
-                            fileName={fileName} documentIconType={msaccess} />
+                        <Document url={url.current} fileName={fileName} documentIconType={documentIcon} />
+                    }
+                    {isMsAccess &&
+                        <Document _alt="ms-access file" url={url.current} fileName={fileName} documentIconType={msaccess} />
+                    }
+                    {isText &&
+                        <Document _alt="ms-access file" url={url.current} fileName={fileName} documentIconType={textIcon} />
                     }
                     {isVideo &&
                         <Video imgDownloadRef={imgDownloadRef} download={download}
