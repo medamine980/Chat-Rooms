@@ -11,3 +11,7 @@ It supports text messages, vocal messages and sharing files.
  - Redux: for state management in the front
  - Expressjs: for the backend
  - WebSocket: for bi-directional communication
+
+## Demo:
+
+[Hosted on railway](https://chat-rooms.up.railway.app/)
