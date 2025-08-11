@@ -14,4 +14,4 @@ It supports text messages, vocal messages and sharing files.
 
 ## Demo:
 
-[Hosted on railway](https://chat-rooms.up.railway.app/)
+[Hosted on Render](https://chat-rooms-0rpc.onrender.com/)
