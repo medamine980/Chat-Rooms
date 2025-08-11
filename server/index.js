@@ -23,7 +23,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
-        origin: ["http://localhost:3000", "https://join-chat-room.herokuapp.com"],
+        origin: ["http://localhost:3000", "https://join-chat-room.herokuapp.com", "https://chat-rooms-0rpc.onrender.com/"],
         methods: ["GET", "POST"],
     },
     maxHttpBufferSize: 1048570000,
